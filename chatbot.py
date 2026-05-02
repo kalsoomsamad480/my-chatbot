@@ -64,7 +64,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Groq client
-client = Groq(api_key="")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # Personality prompts
 personalities = {
